@@ -2,7 +2,7 @@
 
 [git.seths.app](https://git.seths.app/)
 
-Download GitHub folders and explore repositories. Built with TypeScript and Tailwind CSS, with all processing handled in your browser.
+Download GitHub folders and explore github repositories. Built with TypeScript and Tailwind CSS, with all processing handled in your browser.
 
 - Download a folder, file, or repository as a ZIP.
 - Search GitHub and browse branches, tags, and commits.
