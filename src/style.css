@@ -14,10 +14,15 @@
 
 @layer base {
   html {
+    height: 100%;
     color-scheme: dark;
   }
   body {
     @apply m-0 bg-canvas font-sans text-ink antialiased;
+  }
+  body,
+  #app {
+    height: 100%;
   }
   button,
   a,
@@ -131,6 +136,85 @@
   }
   .analysis-section h3 {
     @apply text-sm;
+  }
+}
+
+.app-shell {
+  min-height: 100%;
+}
+
+/* Keep the landing forms within shorter viewports without clipping results. */
+@media (max-height: 900px) {
+  #main {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  #tools-view > div:first-child {
+    margin-bottom: 1.5rem;
+  }
+  #tools-view [role='tablist'] {
+    margin-bottom: 1rem;
+  }
+  #download-panel > .panel,
+  #explore-workspace:not(.is-compact) {
+    padding: 1.5rem;
+  }
+  #tools-view .icon-tile {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+  #download-form,
+  #search-form {
+    margin-top: 1.25rem;
+  }
+  #access-settings {
+    margin-top: 1rem;
+  }
+  #tools-view > p {
+    margin-top: 1.25rem;
+  }
+  .app-shell > footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-height: 740px) {
+  .app-shell > header {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  #main {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  #tools-view > div:first-child,
+  #tools-view [role='tablist'] {
+    margin-bottom: 0.75rem;
+  }
+  .tool-tab {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #download-panel > .panel,
+  #explore-workspace:not(.is-compact) {
+    padding: 1rem;
+  }
+  #tools-view .icon-tile {
+    display: none;
+  }
+  #download-form,
+  #search-form,
+  #tools-view > p {
+    margin-top: 0.75rem;
+  }
+  #access-settings {
+    margin-top: 0.5rem;
+  }
+  .app-shell > footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 

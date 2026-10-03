@@ -1,7 +1,7 @@
 import { escapeHtml } from './utils.ts';
 
 export function renderShell(sourceUrl: string): string {
-  return /* HTML */ ` <div class="flex min-h-dvh flex-col">
+  return /* HTML */ ` <div class="app-shell flex flex-col">
     <header class="flex items-center justify-between gap-2 px-4 py-4 sm:px-8">
       <a
         href="#download"
