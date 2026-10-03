@@ -1,0 +1,46 @@
+import {
+  createIcons,
+  GitBranch,
+  Github,
+  FolderDown,
+  Search,
+  LockKeyhole,
+  Folder,
+  File,
+  Download,
+  CodeXml,
+  LoaderCircle,
+  X,
+  Star,
+  GitFork,
+  ChevronRight,
+  ChevronLeft,
+  Check,
+  KeyRound,
+  ExternalLink,
+} from 'lucide';
+
+export function refreshIcons() {
+  createIcons({
+    icons: {
+      GitBranch,
+      Github,
+      FolderDown,
+      Search,
+      LockKeyhole,
+      Folder,
+      File,
+      Download,
+      CodeXml,
+      LoaderCircle,
+      X,
+      Star,
+      GitFork,
+      ChevronRight,
+      ChevronLeft,
+      Check,
+      KeyRound,
+      ExternalLink,
+    },
+  });
+}
